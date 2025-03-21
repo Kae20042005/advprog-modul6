@@ -17,3 +17,15 @@
 
 **Perubahan pada fungsi handle_connection baru**
 - Tidak seperti sebelumnya yang hanya melakukan print dalam terminal, kini mengembalikan http response.
+
+## Commit 3 Reflection notes
+
+![Commit 3 Screen capture](/assets/images/commit3.png)
+
+**Memisahkan antar response**
+Untuk memisahkan antar response dilihat dari request_line terlebih dahulu, kemudian dipisahkan berdasarkan baris pertama 
+request_line message, jika Get / HTTP/1.1, maka akan mengembalikan response 200, jika tidak akan mengembalikan response 404.
+
+**Perlunya untuk melakukan refactor**
+Refactoring membuat kode jadi lebih mudah dibaca dan dirawat. Kemudian, karena logic hanya dilakukan dalam tempat yang sama
+proses debugging akan menjadi lebih cepat.
