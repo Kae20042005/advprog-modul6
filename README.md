@@ -10,3 +10,10 @@
    - .map(|result| result.unwrap()) untuk unwrap setiap baris dengan asumsi tidak ada error
    - .take_while(|line| !line.is_empty()) menghentikan proses baca ketika menemukan baris kosong
    - .collect() mengumpulkan baris menjadi Vec<String>
+
+## Commit 2 Reflection notes
+
+![Commit 2 screen capture]!(/assets/images/commit2.png)
+
+**Perubahan pada fungsi handle_connection baru**
+- Tidak seperti sebelumnya yang hanya melakukan print dalam terminal, kini mengembalikan http response.
