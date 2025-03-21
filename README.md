@@ -13,7 +13,7 @@
 
 ## Commit 2 Reflection notes
 
-![Commit 2 screen capture]!(/assets/images/commit2.png)
+![Commit 2 screen capture](/assets/images/commit2.png)
 
 **Perubahan pada fungsi handle_connection baru**
 - Tidak seperti sebelumnya yang hanya melakukan print dalam terminal, kini mengembalikan http response.
